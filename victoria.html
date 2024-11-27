@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scripts/hueso.js"></script>
+    <link rel="stylesheet" href="styles/final.css">
+
+</head>
+<body> 
+    <div class="container">
+     <div  class="content">
+       <h1 id="miH1"></h1>
+       <button class="btn" style="  font-size: 33px;" onclick="back()">Back</button>
+     </div>
+    </div>
+
+
+<script>
+// Supongamos que este es tu resultado
+var resultado=localStorage.getItem('re')
+
+// Dependiendo del resultado, cambiamos el contenido del h1
+if(resultado=="u") {
+    document.getElementById("miH1").innerHTML = "FELICIDADES GANASTE";
+} else {
+    document.getElementById("miH1").innerHTML = "PERDISTE, GANO LA MAQUINA";
+}
+</script>
+
+
+<div id="video-background">
+    <video autoplay loop muted>
+        <source src="files/background/efinal.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+</body>
+</html>

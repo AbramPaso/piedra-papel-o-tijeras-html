@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game..</title>
+
+</head>
+<link rel="stylesheet" href="styles/styles.css">
+<body>
+    <button class="btn" onclick="back()">Back</button>ç
+    
+    <div style="display: flex; justify-content: left;">
+        
+      </div>
+
+        <div style="display: flex; justify-content: center;">
+            <img id="upapel" >
+            <img id="utijera" style="transform: scaleX(-1);" >
+            <img id="upiedra" >
+
+            <img id="escorpio"  src="files/gif/escorpio.gif" alt="Texto alternativo">
+            <img  id="subzero" style="transform: scaleX(-1);" src="files/gif/subzero.gif" alt="Texto alternativo">
+            
+            <img id="vpapel" >
+            <img id="vtijera" style="transform: scaleX(-1);" >
+            <img id="vpiedra" >
+        </div> 
+
+    <div class="container">
+        <div class="container2">
+            <button class="btn" onclick="elegir('piedra')">PIEDRA</button>
+            <button class="btn" onclick="elegir('papel')">PAPEL</button>
+            <button class="btn" onclick="elegir('tijera')">TIJERA</button>
+        </div>
+    </div>
+    
+    <div  class="container">
+      <div  class="content2">
+           <div>
+           <h2 id="rol" style="display: flex;justify-content: center; color: white;" ></h2>
+               <h2 id="name" ><h2>: </h2></h2>
+               <h2 id="you"></h2>
+           </div>
+        <br>
+           <div>
+               <h2 >PC:</h2>
+               <h2 id="pc"></h2>
+           </div>
+            
+      </div>
+    </div> 
+
+    <div id="video-background">
+        <video autoplay loop muted>
+            <source src="files/background/Wallpapers Mortal-Kombatt.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script src="scripts/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game..</title>
+
+</head>
+<link rel="stylesheet" href="csspru.css">
+<body>
+    <button onclick="back()">Back</button>
+
+    <div  class="content" style="height: 0px;">
+        <button onclick="elegir('piedra')">PIEDRA</button>
+        <button onclick="elegir('papel')">PAPEL</button>
+        <button onclick="elegir('tijera')">TIJERA</button>
+    </div>
+
+
+    <div class="content" style="height: 0px;">
+        <h2 id="name">:</h2>
+        <span id="name"></span>
+             <h2 id="you"></h2>
+            <br> <br>
+        <span>PC:</span>
+             <h2 id="pc"></h2>
+    </div>
+
+
+    <div id="video-background">
+        <video autoplay loop muted>
+            <source src="mylivewallpapers.com-Mortal-Kombat.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
